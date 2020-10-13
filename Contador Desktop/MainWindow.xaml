@@ -5,8 +5,36 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Contador_Desktop"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="Contador" Height="220" Width="200">
+   
+    <StackPanel>
+        <Border Margin="16" BorderBrush="LightGray" BorderThickness="2">
+        
 
-    </Grid>
+        <StackPanel>
+            
+        
+
+        <Label Content="Conteo:" Margin="4" FontSize="18" HorizontalAlignment="Left"  >
+        </Label>
+        
+        <Label>
+        </Label>
+
+        <StackPanel Orientation="Horizontal" Margin="8" HorizontalAlignment="Center">
+            <Button Content="Contar" Margin="4" Padding="0,2" MinWidth="60">
+            </Button>
+
+            <Button Content="Reiniciar" Margin="4" Padding="0,2" MinWidth="60">
+            </Button>
+        
+            
+    </StackPanel>
+        
+    </StackPanel>
+        </Border>
+        <Button Content="Salir" Margin="16,0" HorizontalAlignment="Right" MinWidth="60">
+        </Button>
+    </StackPanel>
+
 </Window>
