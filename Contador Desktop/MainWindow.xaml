@@ -13,19 +13,23 @@
 
         <StackPanel>
             
-        
+        <!--AGREGUE 2 LABEL-->
 
         <Label Content="Conteo:" Margin="4" FontSize="18" HorizontalAlignment="Left"  >
         </Label>
         
-        <Label>
+        <Label HorizontalAlignment="Center" x:Name="conteoLabel">
+            0
         </Label>
-
+<!-- metí el Stack panel dentro de el otro stack panel por que en el pdf no lucía como en el diseño original de el pdf-->
         <StackPanel Orientation="Horizontal" Margin="8" HorizontalAlignment="Center">
-            <Button Content="Contar" Margin="4" Padding="0,2" MinWidth="60">
+            
+            <!--Aquí me di cuenta que en contar button no era un valor si no a quíen iba referido el button-->
+            
+                    <Button Content="Contar" Margin="4" Padding="0,2" MinWidth="60" x:Name="contarButton" Click="contarButton_Click" > 
             </Button>
 
-            <Button Content="Reiniciar" Margin="4" Padding="0,2" MinWidth="60">
+                    <Button Content="Reiniciar" Margin="4" Padding="0,2" MinWidth="60" x:Name="reiniciarButton" Click="reiniciarButton_Click">
             </Button>
         
             
@@ -33,8 +37,9 @@
         
     </StackPanel>
         </Border>
-        <Button Content="Salir" Margin="16,0" HorizontalAlignment="Right" MinWidth="60">
+        <Button Content="Salir" Margin="16,0" HorizontalAlignment="Right" MinWidth="60" x:Name="salirButton" Click="salirButton_Click">
         </Button>
+        <Button Content="Button"/>
     </StackPanel>
 
 </Window>
